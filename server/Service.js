@@ -14,6 +14,8 @@ class Service {
   }
 
   async update() {
+    console.log(`${Date.now()}: Updating database.`);
+
     const repos = await this.loadRepositories();
     const { contributors, contributorsPerRepo } = await this.loadContributors(repos);
 
