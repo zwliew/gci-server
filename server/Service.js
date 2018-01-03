@@ -22,7 +22,7 @@ class Service {
     const repositoryModels = repos.map(repo => new Repository({
       ...repo,
       contributors: contributorsPerRepo[repo.name],
-    }));
+    })).sort((a, b) => a.contributors - b.contributors);
     Service.storeRepositories(repositoryModels);
 
     const contributorModels = contributors.map(contributor =>
