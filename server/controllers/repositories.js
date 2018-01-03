@@ -1,7 +1,7 @@
 const Repository = require('../models/Repository');
 
 async function getRepositories(ctx) {
-  const repositories = Repository.find();
+  const repositories = await Repository.find();
   ctx.body = repositories;
 }
 

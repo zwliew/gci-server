@@ -1,10 +1,19 @@
 const mongoose = require('mongoose');
 
 const repositorySchema = new mongoose.Schema({
-  name: String,
-  description: String,
-  image: String,
-  contributors: Number,
+  name: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  image: {
+    type: String,
+    required: true,
+  },
+  contributors: {
+    type: Number,
+    required: true,
+  },
 });
 const Repository = mongoose.model('Repository', repositorySchema);
 
