@@ -1,12 +1,12 @@
 const Router = require('koa-router');
-const repos = require('./repos');
+const repositories = require('./repositories');
 const contributors = require('./contributors');
 
 const router = new Router({
   prefix: '/api',
 });
 
-router.use(repos.routes());
+router.use(repositories.routes());
 router.use(contributors.routes());
 
 module.exports = router;
