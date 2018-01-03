@@ -1,0 +1,19 @@
+{
+  "name": "gci-server",
+  "version": "1.0.0",
+  "description": "JBoss Community GCI Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jboss-outreach/gci-server.git"
+  },
+  "author": "JBoss Community",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jboss-outreach/gci-server/issues"
+  },
+  "homepage": "https://github.com/jboss-outreach/gci-server#readme"
+}
