@@ -10,7 +10,7 @@ class Service {
 
   start() {
     this.update();
-    setInterval(this.update, 1800000); // 30 min
+    setInterval(this.update.bind(this), 1800000); // 30 min
   }
 
   async update() {
